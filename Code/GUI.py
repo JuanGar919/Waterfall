@@ -61,9 +61,21 @@ class HabitApp:
 
 # Grabs GoogleData list from GoogleAPI class
 GoogleData = getCalendarEvents()
+#GoogleData2 = getCalendarEvents()
+#GoogleData3 = getCalendarEvents()
+
+#Testing for User1, User2, User3(Processing each google account and for security reasons we could only process one at a time):
 
 # Uses ParseList Function from ParseData class to parse GoogleData list and store in Event objects in a DoublyLinkedList
+
+#Trial 1:
 Dll = ParseList(GoogleData)
+
+#Trial 2:
+#Dll2 = ParseList(GoogleData2)
+
+#Trial 3:
+#Dll3 = ParseList(GoogleData3)
 
 #Runs class to open HabitApp GUI
 HabitApp()
